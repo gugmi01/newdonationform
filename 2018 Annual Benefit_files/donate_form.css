@@ -1,5 +1,123 @@
 /* Basic style sheet for use with Linvio Donations add-on pages */
 /* Updated form styles */
+
+
+
+/* General styles  */
+#toggle-main-navigation{
+  display: none !important;
+}
+
+.main.custom-forms, #pc_contribution_options, #siteDonationPage\:SiteTemplate\:mainForm\:buttons, .donationOptionsHorizontal fieldset{
+  width: 100% !important;
+}
+
+#captcha_flex_form{
+  float: left;
+}
+
+#captcha_flex_form div div.pc_flex_form_label_item{
+    padding: 4px;
+    text-align: right;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0px;
+    -ms-flex: 0px;
+    flex: 0px;
+}
+
+p:nth-child(4){
+  display: none;
+}
+
+/* Begin form fields*/
+
+.pc_flex_form_line_container {
+    display: flex;
+    /* width: 100%; */
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row nowrap;
+    -ms-flex-flow: row nowrap;
+    flex-flow: row nowrap;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+
+.pc_flex_form_label_item {
+    padding: 4px;
+    text-align: right;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 150px;
+    -ms-flex: 0 0 150px;
+    flex: 0 0 150px;
+}
+
+.pc_flex_form_required_flag_item {
+    padding: 4px 0px 0px 0px;
+    text-align: center;
+    -webkit-box-flex: 0;
+    -webkit-flex: 0 0 20px;
+    -ms-flex: 0 0 20px;
+    flex: 0 0 20px;
+}
+
+.pc_flex_form_field_item {
+    padding: 4px;
+    -webkit-box-flex: 4;
+    -webkit-flex: 4 4 auto;
+    -ms-flex: 4 4 auto;
+    flex: 4 4 auto;
+}
+
+#siteDonationPage\:SiteTemplate\:mainForm\:donationInputFieldHoriz{
+  display: block;
+    width: 100%;
+    border: none;
+    padding: .75em;
+    border: 1px solid #d4d4d4;
+    background: #ebebeb;
+    margin-bottom: .75em;
+}
+
+
+img.requiredFieldMarker {
+  width:5px;
+  height:15px;
+  background-image: url("../images/required10.gif");
+  background-repeat: no-repeat;
+}
+
+.custom-forms form table td.requiredFieldMarkerColumn{
+  width: 10px !important;
+}
+
+#bottom ul li{
+  float: none !important;
+  margin-right: 0;
+}
+
+
+#j_id0\3ASiteTemplate\3Apc_donation_form\3A customFieldTable\3A 6\3Aj_id123, #j_id0\3ASiteTemplate\3Apc_donation_form\3A customFieldTable\3A 5\3Aj_id123,#j_id0\3ASiteTemplate\3Apc_donation_form\3A customFieldTable\3A 7\3Aj_id123{
+  text-align: left !important;
+}
+
+
+#top #logo {
+  width: 30.0414591902%;
+}
+.custom-forms form [type="submit"], .custom-forms form [type="button"]{
+  margin-right: 0 !important;
+}
+#siteDonationPage\:SiteTemplate\:mainForm\:j_id198{
+  float: left;
+}
+
+/* Begin donation buttons */
+
 .custom-forms form table label {
   /* display: inline-block; */
   border-radius: 4px;
@@ -18,39 +136,21 @@
   transition: 0.3s ease-in-out;
 }
 
-img.requiredFieldMarker {
-  width:5px;
-  height:15px;
-  background-image: url("../images/required10.gif");
-  background-repeat: no-repeat;
+div#pc_contribution_options div.pc_flex_form div.pc_flex_form_label_item{
+  -webkit-box-flex: 0 !important;
+    -webkit-flex: 0 !important;
+    -ms-flex: 0 !important;
+    flex: 0 !important;
+    padding: 0px;
 }
 
-.custom-forms form table td.requiredFieldMarkerColumn{
-  width: 10px !important;
-}
-
-#bottom ul li{
-  float: none !important;
-  margin-right: 0;
-}
-
-#j_id0\3ASiteTemplate\3Apc_donation_form\3A customFieldTable\3A 5\3Aj_id123{
-  text-align: left !important;
-}
-
-#j_id0\3ASiteTemplate\3Apc_donation_form\3A customFieldTable\3A 6\3Aj_id123{
-  text-align: left !important;
-}
-
-#j_id0\3ASiteTemplate\3Apc_donation_form\3A customFieldTable\3A 7\3Aj_id123{
-  text-align: left !important;
-}
-
-#top #logo {
-  width: 30.0414591902%;
-}
-.custom-forms form [type="submit"], .custom-forms form [type="button"]{
-  margin-right: 0 !important;
+#pc_contribution_options div div .pc_flex_form_required_flag_item{
+  padding: 0 !important;
+  text-align: center;
+  -webkit-box-flex: 0;
+  -webkit-flex: 0 !important;
+  -ms-flex: 0 !important;
+  flex: 0 !important;
 }
 
 
@@ -77,9 +177,6 @@ img.requiredFieldMarker {
   margin-left: unset !important;
 }
 
-/* #pc_contact_info table tbody tr{
-  display: inline-block;
-} */
 #content .wrap .main {
   max-width: none !important;
   width: 100%;
@@ -93,7 +190,25 @@ table.cmpgn_donation_table td.labelColumn {
   width: 45%;
   display: inline-block;
   margin-right: 2%;
+  float: left;
 }
+#pc_contribution_options{
+  float:left;
+}
+
+#siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz tbody tr td{
+  display: inline-block;
+  margin: 2%;
+}
+
+#siteDonationPage\:SiteTemplate\:mainForm\:buttons{
+  float: left;
+}
+
+#siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz\:0, #siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz\:4,#siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz\:3,#siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz\:2,#siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz\:1,#siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz\:5{
+  display: none;
+}
+
 
 tr:nth-child(7) label {
   -webkit-transition: 0.3s ease-in-out;
@@ -145,6 +260,10 @@ footer {
   text-align: center;
 }
 
+#pc_recurring_donation_options{
+  margin-bottom: 4%
+}
+
 .custom-forms form table input:checked+label {
   background-color: rgb(252, 184, 19) !important;
   -webkit-transition: transform 0.3s ease-in-out;
@@ -152,8 +271,13 @@ footer {
   transition: transform 0.3s ease-in-out;
 }
 
+#siteCheckoutPage\:SiteTemplate\:mainForm\:processCard{
+  margin-right: 2%;
+}
+
 .custom-forms form table {
   width: 100%;
+  margin-bottom: 0 !important;
 }
 
 .custom-forms .cmpgn_social_links [class*="-share"] {
@@ -172,9 +296,13 @@ td.fieldColumn{
   text-align: left !important;
 }
 
-#j_id0\3ASiteTemplate\3Apc_donation_form\3A ccButton {
-  width: 50%;
-  height: 50px;
+.pc_button_container{
+  text-align:center;
+}
+
+#siteDonationPage\:SiteTemplate\:mainForm\:ccButton {
+  width: 60%;
+  height: 70px;
   background-color: rgb(141, 198, 63) !important;
   font-weight: 600 !important;
   font-family: 'Gotham Black', 'Roboto', sans-serif !important;
@@ -183,6 +311,7 @@ td.fieldColumn{
   -webkit-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  text-align: center;
 }
 
 #j_id0\3ASiteTemplate\3Apc_donation_form\3A ccButton:hover{
@@ -199,7 +328,7 @@ td.fieldColumn{
   margin-left: 2%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   table.pc_donation_option_list_vert tr {
     width: 100%;
   }
@@ -242,4 +371,21 @@ td.fieldColumn{
   #siteCheckoutPage:SiteTemplate:mainForm:cancel{
     margin-left: 0;
   }
+  #siteDonationPage\:SiteTemplate\:mainForm\:donationOptionsPicklistHoriz tbody tr td{
+    margin: 0;
+    width: 100%;
+  }
+
+  #siteDonationPage\:SiteTemplate\:mainForm\:j_id159 h2{
+    margin-top: 10%;
+  }
+}
+
+
+
+@media screen and (max-width: 960px){
+  .bbutton{
+    float: left;
+  }
+
 }
